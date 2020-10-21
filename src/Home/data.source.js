@@ -1,10 +1,13 @@
 import React from 'react';
+import headerIcon from '../images/headerIcon.png';
+import singleLogo from '../images/singleLogo.png';
+
 export const Nav00DataSource = {
   wrapper: { className: 'header0 home-page-wrapper' },
   page: { className: 'home-page' },
   logo: {
     className: 'header0-logo',
-    children: 'https://os.alipayobjects.com/rmsportal/mlcYmsRilwraoAe.svg',
+    children: headerIcon,
   },
   Menu: {
     className: 'header0-menu',
@@ -45,7 +48,7 @@ export const Banner10DataSource = {
         title: {
           className: 'banner1-title',
           children:
-            'https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png',
+            <img src={singleLogo} width="100%" alt="img" />,
         },
         content: {
           className: 'banner1-content',
@@ -65,11 +68,15 @@ export const Banner10DataSource = {
         title: {
           className: 'banner1-title',
           children:
-            'https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png',
+            <img src={singleLogo} width="100%" alt="img" />,
         },
         content: {
           className: 'banner1-content',
-          children: '一个高效的页面动画解决方案',
+          children: (
+            <span>
+              <p>一家专注于区块链产业的服务平台</p>
+            </span>
+          ),
         },
         button: { className: 'banner1-button', children: 'Learn More' },
       },
@@ -81,7 +88,7 @@ export const Banner10DataSource = {
         title: {
           className: 'banner1-title',
           children:
-            'https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png',
+            <img src={singleLogo} width="100%" alt="img" />,
         },
         content: {
           className: 'banner1-content',
